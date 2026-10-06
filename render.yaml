@@ -1,0 +1,18 @@
+web:
+  buildCommand: npm install --omit=dev --no-audit --no-fund
+  startCommand: npm run render:start
+  envVars:
+    - key: NODE_VERSION
+      value: 20.17.0
+    - key: DISCORD_TOKEN
+      sync: false
+    - key: CLIENT_ID
+      sync: false
+    - key: GUILD_ID
+      sync: false
+    - key: GUILD_ID_2
+      sync: false
+    - key: OPENAI_API_KEY
+      sync: false
+    - key: GROQ_API_KEY
+      sync: false
